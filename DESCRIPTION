@@ -1,0 +1,38 @@
+Package: zinbcdpmm
+Title: Bayesian ZINB-Ordinal Joint Model with CDPMM Random Effects
+Version: 0.1.0
+Authors@R: c(
+    person("Shuqing", "Liang", role = c("aut", "cre"),
+           email = "lsq19853500795@163.com"),
+    person("Jiang", "Du", role = "aut",
+           email = "dujiang84@163.com")
+    )
+Description: Fits a Bayesian joint model for longitudinal zero-inflated
+    negative binomial (ZINB) and ordinal outcomes with shared random effects
+    under a centered Dirichlet process mixture model (CDPMM) prior.  Provides
+    a blocked Gibbs sampler with Polya-Gamma (PG) and Chinese restaurant table
+    data augmentation, plus helpers for simulation and posterior summaries
+    based on the deviance information criterion (DIC), the widely applicable
+    information criterion (WAIC) and the leave-one-out information criterion
+    (LOOIC).  The PG augmentation follows Polson, Scott and Windle (2013)
+    <doi:10.1080/01621459.2013.829001>, the zero-inflated negative binomial
+    construction follows Neelon (2019) <doi:10.1214/18-BA1132>, and the
+    centered Dirichlet process mixture prior follows Tang, Tang and Pan (2014)
+    <doi:10.1016/j.csda.2014.02.015>.
+License: MIT + file LICENSE
+URL: https://github.com/Liang-ShuQing/zinb-ordinal-cdpmm-code
+BugReports: https://github.com/Liang-ShuQing/zinb-ordinal-cdpmm-code/issues
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: BayesLogit, mvtnorm, MCMCpack, truncnorm, loo, stats
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0
+NeedsCompilation: no
+Packaged: 2026-10-12 08:00:56 UTC; lenovo
+Author: Shuqing Liang [aut, cre],
+  Jiang Du [aut]
+Maintainer: Shuqing Liang <lsq19853500795@163.com>
+Repository: CRAN
+Date/Publication: 2026-10-21 16:40:02 UTC
